@@ -4,7 +4,11 @@ document.getElementById('btn-generate').addEventListener('click', function () {
 
 const allRow = document.querySelectorAll('.button');
 allRow.forEach(function(item){
-    item.addEventListener('click', function(){
+    item.addEventListener('click', function(event){
         displayPin();
     });
+});
+
+document.getElementById('btn-submit').addEventListener('click', function(){
+    matchPin();
 });
