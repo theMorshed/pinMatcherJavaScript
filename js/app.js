@@ -1,7 +1,10 @@
-document.getElementById('btn-generate').addEventListener('click', function(){
+document.getElementById('btn-generate').addEventListener('click', function () {
     generatePin();
 });
 
-document.getElementById('calculator-body').addEventListener('click', function(event){
-    displayPin();
+const allRow = document.querySelectorAll('.button');
+allRow.forEach(function(item){
+    item.addEventListener('click', function(){
+        displayPin();
+    });
 });
